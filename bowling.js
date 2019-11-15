@@ -10,7 +10,7 @@ export default class Game {
     let score = 0;
     let frameIndex = 0;
     for (let frame = 0; frame < 10; frame++) {
-      if (rolls[frameIndex] == 10) {
+      if (isStrike(rolls, frameIndex)) {
         // strike
         score += 10 + strikeBonus(rolls, frameIndex);
         frameIndex += 1;
@@ -26,16 +26,20 @@ export default class Game {
   }
 }
 
+function isStrike(rolls, frameIndex) {
+    return rolls[frameIndex] === 10;
+}
+
 function strikeBonus(rolls, frameIndex) {
   return rolls[frameIndex + 1] + rolls[frameIndex + 2];
 }
 
-function sumOfBallsInFrame(rolls, frameIndex) {
-  return rolls[frameIndex] + rolls[frameIndex + 1];
-}
-
 function spareBonus(rolls, frameIndex) {
   return rolls[frameIndex + 2];
+}
+
+function sumOfBallsInFrame(rolls, frameIndex) {
+  return rolls[frameIndex] + rolls[frameIndex + 1];
 }
 
 function isSpare(rolls, frameIndex) {
