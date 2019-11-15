@@ -26,7 +26,7 @@ export default class Game {
 }
 
 function isStrike(rolls, frameIndex) {
-    return rolls[frameIndex] === 10;
+  return rolls[frameIndex] === 10;
 }
 
 function strikeBonus(rolls, frameIndex) {

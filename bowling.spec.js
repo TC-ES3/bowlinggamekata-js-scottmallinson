@@ -43,6 +43,6 @@ test("one strike", () => {
 });
 
 test("perfect game", () => {
-    rollMany(12, 10);
-    expect(g.score()).toBe(300);
-})
+  rollMany(12, 10);
+  expect(g.score()).toBe(300);
+});
