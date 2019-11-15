@@ -1,0 +1,31 @@
+{
+  "name": "bowling-kata-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint",
+    "test": "yarn jest -i --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drpicox/bowling-kata-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@types/jest": "^24.0.22",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
+    "jest": "^24.9.0",
+    "typescript": "^3.7.2"
+  },
+  "prettier": {
+    "printWidth": 60
+  }
+}
